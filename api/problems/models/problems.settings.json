@@ -1,0 +1,28 @@
+{
+  "kind": "collectionType",
+  "collectionName": "problems",
+  "info": {
+    "name": "Problems",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "problemDescription": {
+      "type": "richtext"
+    },
+    "developer": {
+      "model": "developers",
+      "via": "problems"
+    },
+    "Solved": {
+      "type": "boolean",
+      "default": false,
+      "required": true
+    }
+  }
+}

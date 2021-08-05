@@ -1,0 +1,22 @@
+{
+  "kind": "collectionType",
+  "collectionName": "developers",
+  "info": {
+    "name": "Developers"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Name": {
+      "type": "string"
+    },
+    "problems": {
+      "via": "developer",
+      "collection": "problems"
+    }
+  }
+}
